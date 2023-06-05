@@ -4,17 +4,17 @@ var _ = require('underscore');
 
 module.exports = {
   titles: {
-    objective: ['objective', 'objectives'],
-    summary: ['summary'],
-    technology: ['technology', 'technologies'],
-    experience: ['experience'],
+    objective: ['objective', 'objectives','introduction','Career Profile',],
+    summary: ['summary','Personal Profile','about me','about','A little about me'],
+    technology: ['technology', 'technologies','software proficiency'],
+    experience: ['experience','Work History','experiences','professional experience','PROFESSIONAL EXPERIENCE','previous employment','earlier positions'],
     education: ['education'],
-    skills: ['skills', 'Skills & Expertise', 'technology', 'technologies'],
+    skills: ['skills', 'Skills & Expertise', 'technology', 'technologies','Core Skills','software proficiency'],
     languages: ['languages'],
     courses: ['courses'],
     projects: ['projects'],
     links: ['links'],
-    contacts: ['contacts'],
+    contacts: ['contacts','contact'],
     positions: ['positions', 'position'],
     profiles: [
       'profiles',
@@ -22,11 +22,11 @@ module.exports = {
       'social-profiles',
       'social profiles',
     ],
-    awards: ['awards'],
+    awards: ['awards','accomplishments'],
     honors: ['honors'],
-    additional: ['additional'],
+    additional: ['additional','the other stuff','THE OTHER STUFF'],
     certification: ['certification', 'certifications'],
-    interests: ['interests'],
+    interests: ['interests','hobbies'],
   },
   profiles: [
     [
