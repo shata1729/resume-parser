@@ -3,7 +3,7 @@ var _ = require('underscore'),
   fs = require('fs'),
   dictionary = require('../../dictionary.js'),
   logger = require('tracer').colorConsole();
-
+const path = require('path')
 var profilesWatcher = {
   // for change value by reference
   inProgress: 0,
