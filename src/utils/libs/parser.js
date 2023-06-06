@@ -68,7 +68,12 @@ function parse(PreparedFile, cbReturnResume) {
 
   // save prepared file text (for debug)
   // fs.writeFileSync('./parsed/'+PreparedFile.name + '.txt', rawFileData);
-  fs.writeFileSync(path.join(__dirname,'..','..','..','..','..','PARSED','temp.txt'), rawFileData);
+  if(fs.existsSync(path.join(__dirname,'..','..','..','..','..','PARSED'))){
+    fs.writeFileSync(path.join(__dirname,'..','..','..','..','..','PARSED','temp.txt'), rawFileData);
+  } else {
+    fs.mkdirSync(path.join(__dirname,'..','..','..','..','..','PARSED'), { recursive: true });
+    fs.writeFileSync(path.join(__dirname,'..','..','..','..','..','PARSED','temp.txt'), rawFileData);
+  }
 
   // 1 parse regulars
   parseDictionaryRegular(rawFileData, Resume);
